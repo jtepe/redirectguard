@@ -1,0 +1,22 @@
+[package]
+name = "fuzz-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2024"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+url = "2"
+
+[dependencies.fuzz]
+path = ".."
+
+[[bin]]
+name = "redirect_guard"
+path = "fuzz_targets/redirect_guard.rs"
+test = false
+doc = false
+bench = false
