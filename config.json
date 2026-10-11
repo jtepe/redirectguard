@@ -1,0 +1,16 @@
+[
+  {
+    "id":  1,
+    "base": "http://localhost/",
+    "redirect_urls": ["https://foo.bar/?basr=123&d", "http://safran.net/banana"],
+    "origins": ["https://origin.name/"],
+    "tests": ["/home", "https://localhost", "http://localhost", "//eve.com/query"]
+  },
+  {
+    "id":  2,
+    "base": "http://jonas:passwort@example.com",
+    "redirect_urls": ["https://foo.bar/?basr=123&d", "http://safran.net/banana"],
+    "origins": ["https://origin.name/"],
+    "tests": ["/home", "https://foo.bar?basr=123&d", "https://foo.bar?basr=123", "https://origin.name/eggs", "http://jonas:passwort@example.com"]
+  }
+]
